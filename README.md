@@ -1,1 +1,1 @@
-Calculator based on python using python built-in library tkinter
+Calculator based on python 3 using python built-in library tkinter

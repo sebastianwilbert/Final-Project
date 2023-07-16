@@ -45,6 +45,7 @@ def update_task(*args):
             task_list.insert(i, " " + task[:-10] + " ✔")
     file_add_task()
 
+
 # Delete Single Task
 def delete_task(*args):
     global all_task
@@ -108,14 +109,14 @@ task_list.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=task_list.yview)
 
 # Buttons
-update_button = tk.Button(third_frame, text="Tick", width=7, command=update_task, bg="#C0AFE2", fg="#FFFFFF", borderwidth=0,
-                          font=("Gill Sans", 15, "bold"))
+update_button = tk.Button(third_frame, text="Tick", width=7, command=update_task, bg="#C0AFE2", fg="#FFFFFF", 
+                          borderwidth=0, font=("Gill Sans", 15, "bold"))
 update_button.grid(row=0, column=0, padx=10)
-clear_button = tk.Button(third_frame, text="Clear", width=7, command=clear_task, bg="#C0AFE2", fg="#FFFFFF", borderwidth=0,
-                         font=("Gill Sans", 15, "bold"))
+clear_button = tk.Button(third_frame, text="Clear", width=7, command=clear_task, bg="#C0AFE2", fg="#FFFFFF", 
+                         borderwidth=0, font=("Gill Sans", 15, "bold"))
 clear_button.grid(row=0, column=1, padx=10)
-delete_button = tk.Button(third_frame, text="Delete", width=7, command=delete_task, bg="#C0AFE2", fg="#FFFFFF", borderwidth=0,
-                          font=("Gill Sans", 15, "bold"))
+delete_button = tk.Button(third_frame, text="Delete", width=7, command=delete_task, bg="#C0AFE2", fg="#FFFFFF", 
+                          borderwidth=0, font=("Gill Sans", 15, "bold"))
 delete_button.grid(row=0, column=2, padx=10)
 
 # Display Task from txt
